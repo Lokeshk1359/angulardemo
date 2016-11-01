@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-2">
+        <label>First Name</label>
+    </div>
+    <div class="col-md-2">
+        <label>Last Name</label>
+    </div>
+    <div class="col-md-2">
+        <label>Address</label>
+    </div>
+    <div class="col-md-2">
+        <label>Phone Number</label>
+    </div>
+
+</div>
+
+<!-- if you want to search lastname then :  ng-model="search.lastName"-->
+
+<input type="text" ng-model="search" placeholder="Srch">
+<div class="row" ng-repeat="person in personArray|filter:search">
+    <div class="col-md-2">
+        {{person.firstName}}
+    </div>
+    <div class="col-md-2">
+        {{person.lastName}}
+    </div>
+    <div class="col-md-2">
+        {{person.address}}
+    </div>
+    <div class="col-md-2">
+        {{person.phoneNumber}}
+        
+    </div>
+</div>
+
+
+<!--
+ <ol>
+            <li ng-repeat="person in personArray">{{person.firstName}}</li>
+        </ol>-->

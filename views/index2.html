@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Learning Directives</title>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+	</head>
+    <!--Declaring angular application-->
+	<body ng-app="appName">
+<!--
+        <div ng-controller="appCtrl">
+            
+            Header value from controller: {{header}}
+            <sample-header></sample-header>
+        </div>
+-->
+        
+<!--		<sample-header></sample-header>-->
+        
+
+        <h1>Playing with custom direvtives</h1>
+        <person-form></person-form>
+        <person-table></person-table>
+        
+        <!-- Learning ng-repeat -->
+<!--
+        <div ng-controller="personCtrl">
+        <ol>
+            <li ng-repeat="person in personArray">{{person.firstName}}</li>
+        </ol>
+        </div>
+-->
+        
+<!--        <div ng-include="'/views/personForm.html'"></div>-->
+        
+        <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+        <script type="text/javascript" src="/js/app.js"></script>
+        <script type="text/javascript" src="/js/controllers/appCtrl.js"></script>
+        <script type="text/javascript" src="/js/directives/personForm.js"></script>
+        <script type="text/javascript" src="/js/directives/personTable.js"></script>
+        <script type="text/javascript" src="/js/directives/firstDirective.js"></script>
+        <script type="text/javascript" src="/js/controllers/personCtrl.js"></script>
+	</body>
+</html>
